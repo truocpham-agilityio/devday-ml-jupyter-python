@@ -266,8 +266,6 @@ notebooks/data/
 /feature_importances/
 /tuning/
 /ensemble-submissions/
-/data/*.*
-/data/**/*.*
 
 !.gitkeep
 !.keep
