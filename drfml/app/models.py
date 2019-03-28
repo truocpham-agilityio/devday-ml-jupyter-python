@@ -1,3 +1,46 @@
 from django.db import models
 
-# Create your models here.
+
+class House(models.Model):
+    """
+    Define a House model
+    """
+
+    model_name = models.CharField(max_length=255, default="model.pkl")
+    MSSubClass = models.IntegerField()
+    LotFrontage = models.IntegerField()
+    LotArea = models.IntegerField()
+    OverallQual = models.IntegerField()
+    OverallCond = models.IntegerField()
+    YearBuilt = models.IntegerField()
+    YearRemodAdd = models.IntegerField()
+    MasVnrArea = models.IntegerField()
+    BsmtFinSF1 = models.IntegerField()
+    BsmtFinSF2 = models.IntegerField()
+    BsmtUnfSF = models.IntegerField()
+    TotalBsmtSF = models.IntegerField()
+    firstFlrSF = models.IntegerField(verbose_name="1stFlrSF")
+    secondFlrSF = models.IntegerField(verbose_name="2ndFlrSF")
+    LowQualFinSF = models.IntegerField()
+    GrLivArea = models.IntegerField()
+    BsmtFullBath = models.IntegerField()
+    BsmtHalfBath = models.IntegerField()
+    FullBath = models.IntegerField()
+    HalfBath = models.IntegerField()
+    BedroomAbvGr = models.IntegerField()
+    KitchenAbvGr = models.IntegerField()
+    TotRmsAbvGrd = models.IntegerField()
+    Fireplaces = models.IntegerField()
+    GarageYrBlt = models.IntegerField()
+    GarageCars = models.IntegerField()
+    GarageArea = models.IntegerField()
+    WoodDeckSF = models.IntegerField()
+    OpenPorchSF = models.IntegerField()
+    EnclosedPorch = models.IntegerField()
+    thirdSsnPorch = models.IntegerField(verbose_name="3SsnPorch")
+    ScreenPorch = models.IntegerField()
+    PoolArea = models.IntegerField()
+    MiscVal = models.IntegerField()
+    MoSold = models.IntegerField()
+    YrSold = models.IntegerField()
+    SaleCondition = models.IntegerField()

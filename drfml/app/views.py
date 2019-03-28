@@ -4,12 +4,17 @@ import numpy as np
 import pandas as pd
 from sklearn import datasets
 from django.conf import settings
-from rest_framework import views
+from rest_framework import viewsets
 from rest_framework import status
 from rest_framework.response import Response
+from app.serializers import HouseSerializer
+from app.models import House
 
 
-class Predict(views.APIView):
+class PredictViewSet(viewsets.ModelViewSet):
+
+    serializer_class = HouseSerializer
+    queryset = House.objects.all()
 
     def post(self, request):
         predictions = []

@@ -1,8 +1,8 @@
-from app.views import Predict
+from app.views import PredictViewSet
 from django.conf.urls import url
 
 app_name = 'app'
 
 urlpatterns = [
-    url(r'^predict/$', Predict.as_view(), name='predict'),
+    url(r'^predict/$', PredictViewSet, name='predict'),
 ]
