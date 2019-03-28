@@ -1,8 +1,8 @@
+from rest_framework import routers
 from app.views import PredictViewSet
-from django.conf.urls import url
 
 app_name = 'app'
 
-urlpatterns = [
-    url(r'^predict/$', PredictViewSet, name='predict'),
-]
+df_router = routers.DefaultRouter()
+df_router.register(prefix='predict', viewset=PredictViewSet)
+urlpatterns = df_router.urls
