@@ -8,7 +8,7 @@ from setuptools import setup, find_packages
 readme = "This is the package for Django REST Framework Machine Learning"
 
 requirements = [
-    'django==2.1',
+    'django==2.1.6',
     'djangorestframework==3.8.2',
     'sklearn',
     'pandas',
