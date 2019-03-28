@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+################################################################################################################
+## SCRIPTS
+################################################################################################################
+
+# This script install needed packages for the current environment
+function drfml-install() {
+    pip install -e .
+}
+
+# This script run a Django Rest Framework Machine Learning
+function drfml-runserver() {
+    python manage.py runserver
+}

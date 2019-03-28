@@ -20,6 +20,93 @@ Running Jupyter Notebook
 jupyter notebook --notebook-dir=notebooks
 ```
 
+### Django Rest Framework Machine Learning
+
+Setup virtualenvwrapper using python 3.6
+
+```shell
+    mkvirtualenv -p $(which python3.6) devday
+```
+
+OR
+
+```shell
+    mkvirtualenv -p $(pyenv root)/versions/3.6.0/bin/python3.6 devday
+```
+
+Activate environment
+
+```shell
+    source .activate
+```
+
+Install packages
+
+```shell
+    drfml-install
+```
+
+Working with server
+
+```shell
+    cd drfml
+```
+
+Run server
+
+```shell
+    drfml-runserver
+```
+
+### Predict API
+
+Open http://localhost:8000/app/predict/ and using POST method for sample data like
+
+```json
+[
+  {
+    "model_name": "model.pkl",
+    "MSSubClass": 20,
+    "LotFrontage": 80,
+    "LotArea": 11622,
+    "OverallQual": 5,
+    "OverallCond": 6,
+    "YearBuilt": 1961,
+    "YearRemodAdd": 1961,
+    "MasVnrArea": 0,
+    "BsmtFinSF1": 468,
+    "BsmtFinSF2": 144,
+    "BsmtUnfSF": 270,
+    "TotalBsmtSF": 882,
+    "1stFlrSF": 896,
+    "2ndFlrSF": 0,
+    "LowQualFinSF": 0,
+    "GrLivArea": 896,
+    "BsmtFullBath": 0,
+    "BsmtHalfBath": 0,
+    "FullBath": 1,
+    "HalfBath": 0,
+    "BedroomAbvGr": 2,
+    "KitchenAbvGr": 1,
+    "TotRmsAbvGrd": 5,
+    "Fireplaces": 0,
+    "GarageYrBlt": 1961,
+    "GarageCars": 1,
+    "GarageArea": 730,
+    "WoodDeckSF": 140,
+    "OpenPorchSF": 0,
+    "EnclosedPorch": 0,
+    "3SsnPorch": 0,
+    "ScreenPorch": 120,
+    "PoolArea": 0,
+    "MiscVal": 0,
+    "MoSold": 6,
+    "YrSold": 2010,
+    "SaleCondition": 4
+  }
+]
+```
+
 ## Author
 
 - Thong Nguyen <thong.nguyenhuu@asnet.com.vn>
