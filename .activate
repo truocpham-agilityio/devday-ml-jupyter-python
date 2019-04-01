@@ -5,11 +5,11 @@
 ################################################################################################################
 
 # This script install needed packages for the current environment
-function drfml-install() {
+function venv-install() {
     pip install -e .
 }
 
 # This script run a Django Rest Framework Machine Learning
-function drfml-runserver() {
+function runserver() {
     python manage.py runserver
 }

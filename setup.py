@@ -8,8 +8,9 @@ from setuptools import setup, find_packages
 readme = "This is the package for Django REST Framework Machine Learning"
 
 requirements = [
-    'django==2.1.6',
+    'django==2.1',
     'djangorestframework==3.8.2',
+    'django-cors-headers',
     'sklearn',
     'pandas',
     'numpy'
@@ -38,16 +39,17 @@ setup(
     description='',
     entry_points={
         'console_scripts': [
-            'drfml=drfml.cli:main'
+            'house_price_ml=house_price_ml.cli:main'
         ],
     },
     install_requires=requirements,
     dependency_links=dependency_links,
     license='MIT license',
     include_package_data=True,
-    keywords='drfml',
-    name='drfml',
-    packages=find_packages(include=['drfml.*', 'drfml']),
+    keywords='house_price_ml',
+    name='house_price_ml',
+    packages=find_packages(
+        include=['house_price_ml.*', 'house_price_ml']),
     package_data={},
     setup_requires=setup_requirements,
     test_suite='tests',

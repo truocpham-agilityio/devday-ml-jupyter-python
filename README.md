@@ -20,18 +20,18 @@ Running Jupyter Notebook
 jupyter notebook --notebook-dir=notebooks
 ```
 
-### Django Rest Framework Machine Learning
+### House Price Machine Learning Restful API
 
 Setup virtualenvwrapper using python 3.6
 
 ```shell
-    mkvirtualenv -p $(which python3.6) devday
+    mkvirtualenv -p $(which python3.6) venv
 ```
 
 OR
 
 ```shell
-    mkvirtualenv -p $(pyenv root)/versions/3.6.0/bin/python3.6 devday
+    mkvirtualenv -p $(pyenv root)/versions/3.6.0/bin/python3.6 venv
 ```
 
 Activate environment
@@ -43,68 +43,29 @@ Activate environment
 Install packages
 
 ```shell
-    drfml-install
+    venv-install
 ```
 
 Working with server
 
 ```shell
-    cd drfml
+    cd house_price_ml
 ```
 
 Run server
 
 ```shell
-    drfml-runserver
+    runserver
 ```
 
-### Predict API
+### House Price Prediction WebApp
 
-Open http://localhost:8000/app/predict/ and using POST method for sample data like
+Open new tab in terminal and run commands
 
-```json
-[
-  {
-    "model_name": "model.pkl",
-    "MSSubClass": 20,
-    "LotFrontage": 80,
-    "LotArea": 11622,
-    "OverallQual": 5,
-    "OverallCond": 6,
-    "YearBuilt": 1961,
-    "YearRemodAdd": 1961,
-    "MasVnrArea": 0,
-    "BsmtFinSF1": 468,
-    "BsmtFinSF2": 144,
-    "BsmtUnfSF": 270,
-    "TotalBsmtSF": 882,
-    "1stFlrSF": 896,
-    "2ndFlrSF": 0,
-    "LowQualFinSF": 0,
-    "GrLivArea": 896,
-    "BsmtFullBath": 0,
-    "BsmtHalfBath": 0,
-    "FullBath": 1,
-    "HalfBath": 0,
-    "BedroomAbvGr": 2,
-    "KitchenAbvGr": 1,
-    "TotRmsAbvGrd": 5,
-    "Fireplaces": 0,
-    "GarageYrBlt": 1961,
-    "GarageCars": 1,
-    "GarageArea": 730,
-    "WoodDeckSF": 140,
-    "OpenPorchSF": 0,
-    "EnclosedPorch": 0,
-    "3SsnPorch": 0,
-    "ScreenPorch": 120,
-    "PoolArea": 0,
-    "MiscVal": 0,
-    "MoSold": 6,
-    "YrSold": 2010,
-    "SaleCondition": 4
-  }
-]
+```shell
+    cd webapp
+    yarn install
+    yarn start
 ```
 
 ## Author
