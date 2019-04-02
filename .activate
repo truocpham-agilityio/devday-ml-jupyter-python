@@ -9,6 +9,11 @@ function venv-install() {
     pip install -e .
 }
 
+# This script run a Jupyter Notebook
+function serve-notebook() {
+    jupyter notebook --notebook-dir=notebooks
+}
+
 # This script run a Django Rest Framework Machine Learning
 function runserver() {
     python manage.py runserver

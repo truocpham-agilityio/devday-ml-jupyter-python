@@ -11,13 +11,13 @@
 Installing Jupyter with pip
 
 ```shell
-python -m pip install jupyter
+    python -m pip install jupyter
 ```
 
 Running Jupyter Notebook
 
 ```shell
-jupyter notebook --notebook-dir=notebooks
+    jupyter notebook --notebook-dir=notebooks
 ```
 
 ### House Price Machine Learning Restful API
