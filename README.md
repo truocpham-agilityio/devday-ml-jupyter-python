@@ -46,16 +46,10 @@ Install packages
     venv-install
 ```
 
-Working with server
-
-```shell
-    cd house_price_ml
-```
-
 Run server
 
 ```shell
-    runserver
+    run-server
 ```
 
 ### House Price Prediction WebApp
