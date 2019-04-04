@@ -14,12 +14,7 @@ function serve-notebook() {
     jupyter notebook --notebook-dir=notebooks
 }
 
-# This script run a Django Rest Framework Machine Learning
-function run-server() {
-    python house_price_ml/manage.py runserver
-}
-
-# This scirpt run a webapp
-function run-webapp {
-    yarn start
+# This script run Machine Learning House Price Predictor service
+function serve-app() {
+    python ml_house_price/app.py
 }

@@ -20,46 +20,12 @@ Running Jupyter Notebook
     jupyter notebook --notebook-dir=notebooks
 ```
 
-### House Price Machine Learning Restful API
+### Machine Learning House Price Predictor service
 
-Setup virtualenvwrapper using python 3.6
-
-```shell
-    mkvirtualenv -p $(which python3.6) venv
-```
-
-OR
+Run web app
 
 ```shell
-    mkvirtualenv -p $(pyenv root)/versions/3.6.0/bin/python3.6 venv
-```
-
-Activate environment
-
-```shell
-    source .activate
-```
-
-Install packages
-
-```shell
-    venv-install
-```
-
-Run server
-
-```shell
-    run-server
-```
-
-### House Price Prediction WebApp
-
-Open new tab in terminal and run commands
-
-```shell
-    cd webapp
-    yarn install
-    yarn start
+    serve-app
 ```
 
 ## Author

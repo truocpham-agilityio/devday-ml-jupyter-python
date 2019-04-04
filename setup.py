@@ -13,7 +13,9 @@ requirements = [
     'django-cors-headers',
     'sklearn',
     'pandas',
-    'numpy'
+    'numpy',
+    'seaborn',
+    'matplotlib'
 ]
 
 setup_requirements = []
